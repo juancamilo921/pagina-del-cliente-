@@ -45,19 +45,22 @@
         text-align: center;
         font-family: fantasy;
       }
+      h6{
+        text-align: center;
+      }
       p{
         font-family: Arial, Helvetica, sans-serif;
         text-align: start;
       }
       .contact {
     padding: 80px 0;
-      }
+      }   
       .img1{
             width: 300px;
             transition: transform 0.3 ease, border 0.3 ease;
             padding: 5px;
         }
-        .img1:hover{
+       .img1:hover{
             transform: scale(1.1);
             border: 5px solid #3498db;
         }
@@ -71,8 +74,6 @@
           grid-template-columns: 1fr 1fr;
           gap: 30px;
         }
-
-
         .contact .map iframe {
           width: 100%;
           height: 400px;
@@ -97,19 +98,19 @@
                           <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav">
                               <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">inicio</a>
+                                <a class="nav-link active" href="#Inicio">Inicio</a>
                               </li>
                               <li class="nav-item">
-                                <a class="nav-link active" href="#abajo">tienda</a>
+                                <a class="nav-link active" href="#Tienda">Tienda</a>
                               </li>
                               <li class="nav-item">
-                                <a class="nav-link active" href="#abajo">productos</a>
+                                <a class="nav-link active" href="#Productos">Productos</a>
                               </li>
                               <li class="nav-item">
-                                <a class="nav-link active" href="#abajo">galeria</a>
+                                <a class="nav-link active" href="#Galeria">Galeria</a>
                               </li>
                               <li class="nav-item">
-                                <a class="nav-link active" href="#abajo" tabindex="-1" aria-disabled="true">contactos</a>
+                                <a class="nav-link active" href="#Contactos">Contactos</a>
                               </li>
                             </ul>
                           </div>
@@ -120,7 +121,7 @@
         </div>
     </header>
     <main>
-        <section class="container-fluid">
+        <section class="container-fluid" id="Inicio">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -149,7 +150,7 @@
                 </button>
               </div>
         </section>
-        <section>
+        <section id="Tienda">
                   <h1>Historia De La Tienda</h1>
             <div class="container-fluid">
                 <div class="row">
@@ -158,18 +159,16 @@
                             <img src="IMG/foto personal.jpg" class="figure-img img-fluid rounded" alt="..." width="400px" height="150px">
                             <figcaption class="figure-caption">La dueña de ta tienda</figcaption>
                           </figure>
-
                     </div>
                     <div class="col">
                         <h2>
-                            <p>La tienda abrió en el 2010 cuando la dueña de la tienda cuando la hija de la dueña estaba en la escuela o el colegio monto un pequeño puesto donde vendía ropa   para hombre y mujer, un año después de eso abrió formalmente la tienda en la dirección CL.56ª, Medellín, Villa Hermosa, Medellín, Antioquia. Hasta este año que se mudaron para agrandar la tienda y ahora esta estacionada en la dirección CL, 56ª #31, Medellín, Villa Hermosa, Medellín, Antioquia.</p>
+                            <p>La tienda abrió en el 2010 cuando la doña Maria Eugenia Romero, cuando su hija Natalia estaba en el colegio monto un pequeño puesto donde vendía ropa   para hombre y mujer, un año después de eso abrió formalmente la tienda en la dirección CL.56ª, Medellín, Villa Hermosa, Medellín, Antioquia. Hasta este año que se mudaron para agrandar la tienda y ahora esta estacionada en la dirección CL, 56ª #31, Medellín, Villa Hermosa, Medellín, Antioquia.</p>
                         </h2>
-
                     </div>
                 </div>
             </div>
         </section>
-        <section> 
+        <section id="Productos" > 
           <h2>Productos</h2>
           <div class="container">
             <div class="row">
@@ -189,7 +188,7 @@
             </div>
           </div>
         </section>
-        <section>
+        <section id="Galeria" >
           <h2>Galeria</h2>
            <div class="container">
             <div class="row m-3">
@@ -211,7 +210,7 @@
             </div>
           </div>
         </section>
-        <section id="contacto" class="contact">
+        <section id="Contactos" class="contact">
             <div class="container">
                 <h2>¡Visítanos o Contáctanos!</h2>
                 <div class="contact-wrapper">
@@ -219,31 +218,28 @@
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.140470421768!2d-75.54844058991058!3d6.24521242630957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44286178026817%3A0xcc1f098f120364c0!2sCl.%2056a%20%2331%2C%20Medell%C3%ADn%2C%20Villa%20Hermosa%2C%20Medell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses-419!2sco!4v1748436432430!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <div class="contact-form">
-                        <h3>Formulario de Contacto</h3>
-                        <form>
-                            
-                              <div class="mb-3 row">
-                                <label for="Nombre" class="col-sm-2 col-form-label">Nombre</label>
-                                <div class="campo">                 
-                                  <label for="nombre"nombre completo></label>           
-                                  <input type="text" id="nombre" name="nombre" placeholder="digite su nombre completo" required>
-                                </div>
-                              </div>
-                              <div class="mb-3 row">
-                                <label for="numero" class="col-sm-2 col-form-label">numero de telefono</label>
-                               <div class="campo">                  
-                                <label for="telefono"telefono celular></label>                   
-                                <input type="text" id="nombre" name="telefono" placeholder="digite su numero telefonico" required>         
-                              </div>
-                              </div>
-                              <div class="mb-3 row">
-                                <div class="campo">                 
-                                  <label for="asunto"asunto></label>                  
-                                  <input type="text" id="asunto" name="asunto" placeholder="que me quieres decir" required>              
-                                </div>
-                              </div>
-                            <button type="submit" class="button">Enviar Mensaje</button>
-                        </form>
+                       <h1>Contactenos</h1>          
+                       <p>¿tienes alguna pregunta o inquietud? complete el siguiente formulario lo antes posible</p>          
+                       <form action="https://formspree.io/f/xwplqzjp" method="post">             
+                        <div class="campo">               
+                          <label for="nombre"nombre completo></label>                
+                          <input type="text" id="nombre" name="nombre" placeholder="digite su nombre completo" required>            
+                        </div>             
+                        <div class="campo">            
+                          <label for="email"email></label>             
+                          <input type="text" id="email" name="email" placeholder="digite el correo electronico" required>            
+                        </div>            
+                        <div class="campo">           
+                          <label for="telefono"telefono celular></label>         
+                          <input type="text" id="nombre" name="telefono" placeholder="digite su numero telefonico" required>                     
+                        </div>            
+                        <div class="campo">            
+                          <label for="asunto"asunto></label>            
+                          <input type="text" id="asunto" name="asunto" placeholder="que me quieres decir" required>         
+                        </div>          
+                        <button type="submit">enviar</button>         
+                        <button type="reset">limpiar</button>       
+                      </form>
                     </div>
                 </div>
             </div>
@@ -253,18 +249,21 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <h3>horario de atencion </h3>
+            <img class="img" src="IMG/logo.jpg" alt="" width="200px" height="100px">
+          </div>
+          <div class="col">
+            <h3>Horario de Atencion </h3>
             <p>de lunes a sabado de 11:00am a 7:00pm</p>
             <p>el domingo (cerrado)</p>
           </div>
           <div class="col">
-            <h3>ubicacion</h3>
+            <h3>Ubicacion</h3>
             <p>nos encontramos </p>
             <p>Cl. 56a #31, Medellín, Villa Hermosa, Medellín, Antioquia</p>
             <p>el pinal (Manzanares)</p>
           </div>
           <div class="col">
-            <h3>contactanos</h3>
+            <h3>Contactanos</h3>
             <p>nuestros nuumeros de contacto son</p>
             <p>numero de whatsApp</p>
             <p>313 675 57 61</p>
@@ -272,6 +271,8 @@
           </div>
         </div>
       </div>
+      <h6>Todos los derechos reservados ® Almacen Mania 2025</h6>
+      <h6>Todos los derechos del creador ® JCL921 2025</h6>
     </footer>
      <!-- Optional JavaScript; choose one of the two! -->
 
